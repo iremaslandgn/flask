@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- W3Schools'daki Bootstrap Form örneği -->
+<html lang="tr">
+<head>
+  <title>Müşteri Kayıp Veri Kümesi Sınıflandırma</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Müşteri Kredi Alabilir mi?</h2>
+  <form action="predict" method="POST">
+    <div class="form-group">
+      <label for="img">Kredi Miktari</label>
+      <input class="form-control" id="data_1" placeholder="Kredi Miktari" name="data_1" >
+    </div>  
+    <div class="form-group">
+        <label for="img">Yaş</label>
+        <input class="form-control" id="data_2" placeholder="Yaş" name="data_2" >
+    </div>
+    <div class="form-group">
+        <label for="img">Ev Durumu</label>
+        <select class="form-control" id="data_3" placeholder="Ev Durumu" name="data_3" >
+            <option value ="0">Kiracı</option>
+            <option value ="1">Ev Sahibi</option>
+        </select> 
+    </div>
+        <div class="form-group">
+        <label for="img">Aldığı Kredi Sayısı</label>
+        <input class="form-control" id="data_4" placeholder="Aldığı Kredi Sayısı" name="data_4" >
+    </div>
+    <div class="form-group">
+        <label for="img">Telefon Durumu</label>
+        <select class="form-control" id="data_5" placeholder="Telefon Durumu" name="data_5" >
+            <option value ="0">Yok</option>
+            <option value ="1">Var</option>
+        </select> 
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>
